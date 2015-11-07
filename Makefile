@@ -2,7 +2,7 @@ all: help
 	@echo "running make help"
 
 build: lint
-	@echo "Building..."
+	@echo "Building to pkg/gauntlt-server..."
 	@godep go build -o pkg/gauntlt-server ./gauntlt-server.go
 
 test:
@@ -12,7 +12,7 @@ start:
 	@echo "nothing to start, better get to writing something"
 
 lint:
-	@echo "Linting..."
+	@echo "Linting with golint..."
 	@golint ./...
 	@echo "Static Analysis using go vet..."
 	@godep go vet ./... | grep -v Godeps |tee /tmp/gauntlt-server-govet.txt
