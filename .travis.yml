@@ -1,6 +1,7 @@
 language: go
 rvm:
   - 1.5
+sudo: false
 before_install:
 before_script:
 script:
