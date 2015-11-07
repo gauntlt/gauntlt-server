@@ -1,5 +1,5 @@
 language: go
-rvm:
+go:
   - 1.5
 sudo: false
 before_install:
