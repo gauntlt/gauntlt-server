@@ -4,6 +4,7 @@ go:
 sudo: false
 install:
   - go get -u github.com/golang/lint/golint
+  - go get github.com/tools/godep
 script:
   - make build
 notifications:
