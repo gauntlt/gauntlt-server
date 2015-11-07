@@ -7,4 +7,5 @@ install:
   - go get github.com/tools/godep
 script:
   - make build
+  - make start &
 notifications:

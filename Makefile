@@ -9,7 +9,8 @@ test:
 	@echo "no tests yet"
 
 start:
-	@echo "nothing to start, better get to writing something"
+	@echo "Starting"
+	./pkg/gauntlt-server
 
 lint:
 	@echo "Linting with golint..."
