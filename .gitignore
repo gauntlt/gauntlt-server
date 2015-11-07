@@ -1,1 +1,3 @@
-gauntlt-server
+# ignore binary artifacts
+pkg/gauntlt-server
+
