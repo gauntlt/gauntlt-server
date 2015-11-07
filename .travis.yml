@@ -1,12 +1,6 @@
-nguage: ruby
+language: go
 rvm:
-  - 1.9.3
+  - 1.5
 before_install:
-  - git submodule update --init --recursive
 before_script:
-
 notifications:
-  irc:
-    channels:
-      - "chat.freenode.net#gauntlt"
-    use_notice: true
