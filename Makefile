@@ -2,7 +2,8 @@ all: help
 	@echo "running make help"
 
 build:
-	@echo "nothing to build yet"
+	@echo "building..."
+	@go build ./...
 
 test:
 	@echo "no tests yet"
