@@ -3,4 +3,6 @@ rvm:
   - 1.5
 before_install:
 before_script:
+script:
+  - make
 notifications:
