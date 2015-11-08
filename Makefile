@@ -3,6 +3,7 @@ all: help
 
 build: lint
 	@echo "Building to pkg/gauntlt-server..."
+	@rice embed-go
 	@godep go build -o pkg/gauntlt-server ./gauntlt-server.go
 
 test:

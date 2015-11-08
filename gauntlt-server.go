@@ -1,9 +1,13 @@
 package main
 
-import "net/http"
+import (
+	"github.com/GeertJohan/go.rice"
+	"net/http"
+)
 
 func main() {
-	http.HandleFunc("/", hello)
+	http.Handle("/", http.FileServer(rice.MustFindBox("http-files").HTTPBox()))
+	http.HandleFunc("/hello", hello)
 	http.ListenAndServe("127.0.0.1:8080", nil)
 }
 
